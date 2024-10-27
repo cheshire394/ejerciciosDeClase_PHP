@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset style="background-color: rgb(205, 245, 126);">
+        <legend>Recoger Array del formulario</legend>
+        <form action="datosFormulario.php" method="post" >
+            <label for="arr">Introduce numeros</label> 
+            <input type="text" name="arr[]" id="arr">
+            
+
+        </form>
+    </fieldset>
+
+    <fieldset style="background-color: rgb(205, 245, 126);">
+        <legend>Ejercicio ampliacion1 minimas monedas: </legend>
+        <form action="ampliacion1.php" method="post" >
+            <label for="tipos">cuantos tipos de moneadas tienes: </label> 
+            <input type="number" min="1" max="50" maxlength="2" name="tipos" id="tipos" value="1">
+            <br>
+            <label for="precioCoche">Precio del vehiculo: </label>
+            <input type="number" max="10000" min="1" value="1" name="precioCoche" id="precioCoche">
+            <button type="submit" name="formulario1">Enviar</button>
+            <br>
+            
+        </form>
+    </fieldset>
+    
+    
+</body>
+</html>

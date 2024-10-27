@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        button{
+            border-radius: 4px;
+            background-color: rgb(109, 109, 109);
+            color: rgb(26, 25, 25);
+            font-weight: bold;    
+        }
+
+        
+      
+    </style>
+</head>
+<body>
+    <h2>Ejercicio formularios: 29 y 35</h2>
+    <fieldset style="background-color: rgb(243, 243, 172);">
+    
+        <legend style="color: rgb(46, 44, 44);">Rellena el formulario: </legend>
+        <form method="get" action="formularios.php">
+
+            <label for="fecha">Introduce una fecha</label>
+
+            <input type="text" name="fecha" placeholder="DD/MM/YYYY">
+    
+        <button type="submit">Enviar</button>
+    
+    
+        </form>
+
+    </fieldset>
+    <br>
+
+ 
+
+    <h2>Ejercicio formularios: 30</h2>
+    <br>
+    <fieldset style="background-color: rgb(243, 243, 172);">
+    
+        <legend style="color: rgb(46, 44, 44);">Rellena el formulario: </legend>
+        <form method="get" action="formularios.php">
+
+           <label for="name">Nombre: </label>
+           <input id="name" name="name" type="text">
+           <br>
+           <label for="email">Correro electrónico</label>
+           <input type="email" name="email" id="email">
+           <br>
+           <label for="web">Página web: </label>
+           <input type="url" id="web" name="web">
+           <br>
+           <label for="comentario">Comentario</label>
+            <textarea rows="5" cols="30" name="comentario" id="comentario"></textarea>
+           <br>
+            <button type="submit">Enviar</button>
+    
+    
+        </form>
+
+    </fieldset>
+    <br>
+    <fieldset style="background-color: rgb(198, 235, 143);">
+        <legend style="color: rgb(39, 35, 35);">Ejercicio Arrays: 42</legend>
+        <form action="arrays.php" method="post">
+
+            <label for="notas">Introduce todas las notas (vector): </label>
+            <input type="text" name="notas" id="notas">
+            <br>
+            <label for="mates">Introduce las Matematicas: </label>
+            <input type="text" name="mates" id="mates">
+
+            <label for="ingles">Introduce las ingles: </label>
+            <input type="text" name="ingles" id="ingles">
+
+            <label for="lengua">Introduce las lengua: </label>
+            <input type="text" name="lengua" id="lengua">
+            <br>
+            <button type="submit">Enviar</button>
+
+
+
+        </form>
+    </fieldset>
+    <br>
+
+    <fieldset>
+
+    <form method="post" action="arrays.php"> 
+        <legend>Ejecicio 43: Genera un segundo formulario a partir de los datos de este: </legend>
+        <label for="numNotas">Introduce el numero de notas: </label>
+        <input type="number" name="numNotas" id="numNotas" required>
+
+        <br>
+
+        <label for="nombreAsig">Introduce el nombre de la asignatura: </label>
+        <input type="text" name="nombreAsig" id="nombreAsig" required>
+
+        <br>
+        <button type="submit" name="formulario1">Enviar</button>
+
+    </form>
+
+    </fieldset>
+
+
+
+
+
+
+    <fieldset style="background-color: pink;">
+        <legend style="font-weight: bold, color=grey;">Ejercicio 46: Introduce las filas y columnas de una matriz: </legend>
+
+        <form action="arrays.php" method="post">
+            <label for="columnas">Columnas de la matriz</label>
+            <input type="number" step="1" max="10" min="1" name="columnas" id="columnas" value="1">
+            <br>
+            <label for="filas">filas de la matriz</label>
+            <input type="number" step="1" max="10" min="1" name="filas" id="filas" value="1">
+            <br>
+            <button type="submit">Enviar</button>
+
+
+
+
+        </form>
+
+    </fieldset>
+
+    
+
+    <br>
+        
+    
+
+
+    <fieldset style="background-color: rgb(210, 242, 161);">
+        <legend style="color: blueviolet; font-weight: bold;">Ejercicio de Ampliacion: Modas</legend>
+        <form action="ampliacion1.php" method="post">
+            <label for="N">Número de items del array: </label>
+            <input type="number" min="0" max="25000" step="1" name="N" id="N" value="0">
+            <br>
+            <label for="vector">Introduce elementos del vector (integer +):  </label>
+            <input type="text" name="vector[]" id="vector">
+            <p>Nota: Solo se tendrá en cuenta los primeros números que introduzca en Número de items</p>
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+
+    <br>
+
+    <fieldset style="background-color: rgb(241, 150, 45);">
+        <legend style="color: rgb(54, 53, 56); font-weight: bold;">Ejercicio de String: numero 49</legend>
+        <form action="string.php" method="get">
+            <label for="cadena">Introduce una palabra: </label>
+            <input type="text" value="" name="cadena" id="cadena">
+           
+        </form>
+    </fieldset>
+
+    <fieldset style="background-color: rgb(228, 235, 146);">
+        <legend style="color: rgb(54, 53, 56); font-weight: bold;">Ejercicio de String cuentavocales: numero 51 y 52, 54 y 55 </legend>
+        <form action="string.php" method="get">
+          
+            <textarea cols="60" rows="10" placeholder="introduce texto" name="texto"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+           
+        </form>
+    </fieldset>
+    
+
+
+
+   
+   
+    
+</body>
+</html>
